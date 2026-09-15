@@ -15,9 +15,6 @@ body {
 /* Header og navigasjon */
 
 header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	background-color: #1e3a5f;
 	padding: 2rem 1rem;
 	color: #ffffff;
@@ -50,19 +47,9 @@ header {
 /* Hovedinnhold */
 
 main {
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	gap: 1.5rem;
-	align-items: start;
 	max-width: 75vw;
 	margin: 32px auto;
 	padding: 0 1.5rem;
-
-	section {
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-	}
 }
 
 article {
