@@ -111,3 +111,9 @@ aside {
 footer {
 	grid-area: footer;
 }
+
+@media (min-width: 600px) {
+	#grid-container {
+		grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer";
+	}
+}
