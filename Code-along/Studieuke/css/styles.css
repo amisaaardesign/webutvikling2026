@@ -73,7 +73,7 @@ main {
 
 aside {
 	display: flex;
-	gap: 1rem;
+	gap: 2rem;
 	flex-direction: column;
 	padding: 1.5rem;
 	article {
@@ -88,5 +88,43 @@ aside {
 				border-radius: 50%;
 			}
 		}
+	}
+}
+
+footer {
+	display: none;
+}
+
+@media only screen and (min-width: 650px) {
+	header ul {
+		display: flex;
+		list-style: none;
+		gap: 1rem;
+
+		a {
+			text-decoration: none;
+			&::after {
+				display: block;
+				width: 100%;
+
+				background-color: red;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+
+	header nav {
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+	}
+
+	#hamburger {
+		display: none;
 	}
 }
