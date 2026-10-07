@@ -103,18 +103,6 @@ footer {
 
 		a {
 			text-decoration: none;
-			&::after {
-				display: block;
-				width: 100%;
-
-				background-color: red;
-				position: absolute;
-				top: 0;
-				left: 0;
-			}
-			&:hover {
-				text-decoration: underline;
-			}
 		}
 	}
 
