@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* Extension */
-.flex-column, .kontaktskjema, .sidefot, .hamburger, .toppheader {
+.flex-column, .kontaktskjema, .sidefot, .hamburger {
   display: flex;
   flex-direction: column;
 }
@@ -35,6 +35,8 @@ a {
 
 /* Toppheader */
 .toppheader {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 0.75rem;
   padding: 1rem;
@@ -87,8 +89,8 @@ a {
   justify-content: center;
   gap: 0.5rem 1rem;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .hovednav a {
@@ -99,10 +101,10 @@ a {
 
 /* Hero */
 .hero {
-  background-color: #2b2d42;
-  color: #ffffff;
+  background-color: red;
+  color: white;
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 4rem;
 }
 
 .hero h1 {
@@ -130,8 +132,8 @@ a {
 /* Innhold */
 main {
   max-width: 1100px;
-  margin: 0 auto;
   padding: 0 1rem;
+  margin: 0 auto;
 }
 
 main section {
@@ -414,12 +416,26 @@ address {
   background-color: #ece3dc;
 }
 
+.menyliste li:nth-child(2)::after {
+  content: "POPULÆR";
+  position: absolute;
+  top: -0.6rem;
+  right: -0.06rem;
+  background-color: green;
+  color: white;
+  font: 0.7rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .menyliste li:nth-child(4)::after {
   content: "NY";
   position: absolute;
   top: -0.6rem;
   right: -0.06rem;
-  background-color: #bf5f36;
+  background-color: blue;
   color: white;
   font: 0.7rem;
   font-weight: bold;
